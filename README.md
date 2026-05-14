@@ -100,7 +100,7 @@ The portfolio is deployed through Vercel and connected to the GitHub repository.
 
 - [ERP Lite GitOps Homelab Platform](https://github.com/kaybe005/erp-lite) - completed flagship project covering Kubernetes, k3s, Helm, ArgoCD, GitHub Actions, GHCR, Docker, Traefik, cert-manager, PostgreSQL PVC, and Prometheus/Grafana.
 - [AWS Secure Web Infrastructure with Terraform](https://github.com/kaybe005/aws-terraform-web-infra) - completed flagship project covering Terraform, AWS VPC, public/private subnets, ALB, NAT Gateway, private EC2, IAM, SSM Session Manager, and security groups.
-- Secure Container CI/CD Pipeline - in progress.
+- [DevOps Portfolio CI/CD Pipeline](https://github.com/kaybe005/kalash-platform-lab) - completed project covering Next.js, TypeScript, GitHub Actions CI, Vercel deployment, Name.com DNS, and the live custom `.dev` domain.
 - Kubernetes Observability & Incident Response Lab - planned.
 
 ## Content Structure
@@ -119,7 +119,7 @@ The portfolio is deployed through Vercel and connected to the GitHub repository.
 - Automated CI checks with GitHub Actions
 - Vercel deployment workflow
 - Custom `.dev` domain setup
-- Clear separation of completed, in-progress, and planned projects
+- Clear separation of completed and planned projects
 
 ## Future Improvements
 

@@ -35,16 +35,16 @@ export const skillDomains: SkillDomain[] = [
   {
     id: "cicd",
     icon: "CI",
-    title: "CI/CD & Containers",
+    title: "CI/CD & Deployment",
     description:
-      "Pipeline design for build, test, security scan, immutable tag, push, and deploy workflows.",
+      "GitHub Actions quality checks, Vercel deployment, custom domain setup, and documented delivery workflows.",
     tools: [
       "GitHub Actions",
-      "Docker",
-      "Trivy",
-      "GHCR",
-      "Buildx",
-      "linux/amd64",
+      "npm ci",
+      "TypeScript",
+      "ESLint",
+      "Vercel",
+      "DNS",
     ],
   },
   {
@@ -93,10 +93,10 @@ export const roadmap: RoadmapPhase[] = [
     items: [
       "ERP Lite K8s GitOps workflow",
       "AWS Terraform web infrastructure",
+      "Portfolio CI/CD workflow",
+      "Vercel custom .dev deployment",
       "GitHub Actions to GHCR pipeline",
       "Helm + ArgoCD deployment sync",
-      "Traefik + cert-manager TLS",
-      "PVC-backed PostgreSQL",
     ],
   },
   {
@@ -104,11 +104,11 @@ export const roadmap: RoadmapPhase[] = [
     phase: "active",
     label: "In Progress",
     items: [
-      "Secure CI/CD pipeline",
-      "Trivy CVE scanning gate",
-      "Container build hardening",
-      "Pipeline documentation",
-      "Failure-mode notes",
+      "AWS Cloud Practitioner study",
+      "CKA exam prep",
+      "Linux operations practice",
+      "Terraform module practice",
+      "Observability lab planning",
     ],
   },
   {

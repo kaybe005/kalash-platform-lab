@@ -10,6 +10,14 @@ const statusConfig = {
     bg: "bg-green/7",
     glow: "glow-green",
   },
+  completed: {
+    label: "Completed",
+    dot: "bg-green",
+    text: "text-green",
+    border: "border-green/35",
+    bg: "bg-green/6",
+    glow: "",
+  },
   "in-progress": {
     label: "In Progress",
     dot: "bg-amber",
@@ -34,7 +42,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ project }: ProjectCardProps) {
   const evidenceLabel =
-    project.status === "completed-flagship"
+    project.status === "completed-flagship" || project.status === "completed"
       ? "What it proves"
       : project.status === "in-progress"
         ? "Build scope"
@@ -42,6 +50,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
   const diagramLabel =
     project.status === "completed-flagship"
       ? "Architecture evidence"
+      : project.status === "completed"
+        ? "Delivery workflow"
       : project.status === "in-progress"
         ? "Pipeline in progress"
         : "Planned lab shape";
@@ -110,7 +120,11 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                 aria-label="Repository not yet available"
                 title="Coming soon"
               >
-                {project.status === "in-progress" ? "In Progress" : "Planned"}
+                {project.status === "in-progress"
+                  ? "In Progress"
+                  : project.status === "planned"
+                    ? "Planned"
+                    : "Completed"}
               </span>
             )}
           </div>

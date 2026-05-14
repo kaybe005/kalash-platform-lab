@@ -26,8 +26,8 @@ const channels = [
   },
   {
     label: "Portfolio",
-    value: "kalashbijukchhe.com",
-    href: "https://kalashbijukchhe.com",
+    value: "kalashbijukchhe.dev",
+    href: "https://kalashbijukchhe.dev",
     ariaLabel: "Portfolio website",
     external: true,
   },

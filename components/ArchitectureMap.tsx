@@ -29,10 +29,12 @@ const cloudLane: LaneItem[] = [
 ];
 
 const deliveryLane: LaneItem[] = [
-  { label: "GitHub", sub: "Source + Actions", color: "#8899A6", state: "Completed" },
-  { label: "Docker Buildx", sub: "linux/amd64 images", color: "#8899A6", state: "Completed" },
-  { label: "Trivy", sub: "CVE scanning gate", color: "#FFB300", state: "In progress" },
-  { label: "GHCR", sub: "SHA-tagged images", color: "#8899A6", state: "Completed" },
+  { label: "GitHub Actions", sub: "Push + PR checks", color: "#8899A6", state: "Completed" },
+  { label: "npm ci", sub: "Clean install", color: "#8899A6", state: "Completed" },
+  { label: "Typecheck", sub: "TypeScript validation", color: "#00E676", state: "Completed" },
+  { label: "ESLint", sub: "Lint validation", color: "#00E676", state: "Completed" },
+  { label: "Vercel", sub: "Production deployment", color: "#8899A6", state: "Completed" },
+  { label: ".dev DNS", sub: "Name.com domain", color: "#2979FF", state: "Completed" },
 ];
 
 const opsLane: LaneItem[] = [
@@ -77,7 +79,7 @@ export default function ArchitectureMap() {
             Infrastructure Map
           </h2>
           <p className="text-muted text-lg max-w-[55ch] leading-relaxed">
-            A status-aware view of completed flagship work, in-progress pipeline hardening, and planned observability practice.
+            A status-aware view of completed flagship infrastructure work, the completed portfolio CI/CD delivery path, and planned observability practice.
           </p>
         </div>
 
@@ -118,7 +120,7 @@ export default function ArchitectureMap() {
               title="Delivery Pipeline"
               icon="CI"
               iconColor="text-amber"
-              description="Completed GitHub Actions and GHCR patterns from ERP Lite, plus a focused secure CI/CD pipeline currently in progress."
+              description="Completed portfolio CI/CD workflow with GitHub Actions checks, Vercel deployment, and a live custom .dev domain."
               items={deliveryLane}
               accentColor="border-amber/30"
             />

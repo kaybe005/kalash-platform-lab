@@ -6,7 +6,7 @@ const bootLines = [
   { text: "Initializing Platform Lab", tag: "BOOT", tagColor: "text-amber" },
   { text: "Kubernetes GitOps workflow documented", tag: "OK", tagColor: "text-green" },
   { text: "AWS Terraform infrastructure documented", tag: "OK", tagColor: "text-green" },
-  { text: "Secure container pipeline in progress", tag: "WIP", tagColor: "text-amber" },
+  { text: "Portfolio CI/CD workflow completed", tag: "OK", tagColor: "text-green" },
   { text: "Observability incident lab planned", tag: "NEXT", tagColor: "text-cyan" },
   { text: "Ready for junior DevOps, cloud, and platform roles", tag: "LIVE", tagColor: "text-green" },
 ];

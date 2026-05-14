@@ -24,7 +24,7 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
-const siteUrl = "https://kalashbijukchhe.com";
+const siteUrl = "https://kalashbijukchhe.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
